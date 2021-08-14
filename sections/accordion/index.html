@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Icon bar</title>
+
+        <link
+            rel="icon"
+            href="https://image.flaticon.com/icons/png/512/2371/2371580.png"
+        />
+        <link
+            href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="./render.css" />
+    </head>
+
+    <body>
+        <button class="accordion" onclick="click2(this)">Section 1</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+
+        <button class="accordion" onclick="click2(this)">Section 2</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+        <button class="accordion" onclick="click2(this)">Section 2</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+
+        <button class="accordion" onclick="click2(this)">Section 3</button>
+        <div class="panel">
+            <p>Lorem ipsum...</p>
+        </div>
+
+        <div class="" style="height: 100px"></div>
+
+        <div class="sections">
+            <div class="section" onclick="myClick(this)">
+                <div class="section__title">
+                    <p>Section 1</p>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="section__content hidden">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Officiis totam unde magnam aliquam quis aut quasi qui, saepe
+                    laborum asperiores doloremque amet eum ut, repudiandae
+                    nostrum culpa recusandae quibusdam! Voluptate.
+                </div>
+            </div>
+        </div>
+        <div class="sections">
+            <div class="section" onclick="myClick(this)">
+                <div class="section__title">
+                    <p>Section 1</p>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="section__content hidden">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Officiis totam unde magnam aliquam quis aut quasi qui, saepe
+                    laborum asperiores doloremque amet eum ut, repudiandae
+                    nostrum culpa recusandae quibusdam! Voluptate.
+                </div>
+            </div>
+        </div>
+        <div class="sections">
+            <div class="section" onclick="myClick(this)">
+                <div class="section__title">
+                    <p>Section 1</p>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="section__content hidden">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Officiis totam unde magnam aliquam quis aut quasi qui, saepe
+                    laborum asperiores doloremque amet eum ut, repudiandae
+                    nostrum culpa recusandae quibusdam! Voluptate.
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </body>
+</html>

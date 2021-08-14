@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serifyy;
+  background: #E5E5E5;
+}
+
+.card {
+  margin: 60px 62px;
+  padding: 12px;
+  height: 180px;
+  width: 700px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+}
+.card__img > img {
+  width: 156px;
+  height: 156px;
+  object-fit: cover;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #DBDBDB;
+}
+.card__detail {
+  margin: 8px 12px 0 24px;
+}
+.card__detail > .detail__title {
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+}
+.card__detail > .detail__description {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: justify;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.card__detail > .detail__choose {
+  margin: 34px 0 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.card__detail > .detail__choose > .choose__watchlist {
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  color: #868686;
+}
+.card__detail > .detail__choose > .choose__watchlist > i {
+  margin-right: 8px;
+  font-weight: normal;
+  transition: all 0.2s ease;
+}
+.card__detail > .detail__choose > .choose__watchlist:hover > i {
+  font-weight: bold;
+  color: #ff0000;
+}
+.card__detail > .detail__choose > .choose__watch {
+  border-radius: 6px;
+  color: #fff;
+  background-color: #18A900;
+}
+
+.btn {
+  padding: 8px 24px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=render.css.map */

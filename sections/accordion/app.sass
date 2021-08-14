@@ -1,0 +1,52 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	user-select: none
+
+.accordion
+	width: 500px
+	padding: 10px
+	text-align: left
+	border: none
+	border-radius: 0
+	transition: 0.4s
+	+ .panel
+		max-height: 0
+		overflow: hidden
+		transition: all 0.4s ease
+		// &.hidden
+		// 	height: 0
+
+.sections
+	width: 500px
+
+	.section
+		background-color: #cccccc8a
+		transition: 0.4s
+
+		&__title
+			display: flex
+			justify-content: space-between
+			padding: 10px
+			cursor: pointer
+			transition: 0.4s
+			> i
+				font-size: 10px
+				font-weight: 600
+
+		&__content
+			max-height: 0px
+			overflow: hidden
+			// padding: 10px
+			text-align: justify
+			word-break: keep-all
+			// display: block
+			transition: all 0.5s ease
+			background-color: #e9aaaad5
+
+		&:hover
+			background-color: #ccc
+
+// .hidden
+// 	display: none

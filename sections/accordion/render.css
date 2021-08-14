@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.accordion {
+  width: 500px;
+  padding: 10px;
+  text-align: left;
+  border: none;
+  border-radius: 0;
+  transition: 0.4s;
+}
+.accordion + .panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.sections {
+  width: 500px;
+}
+.sections .section {
+  background-color: #cccccc8a;
+  transition: 0.4s;
+}
+.sections .section__title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.sections .section__title > i {
+  font-size: 10px;
+  font-weight: 600;
+}
+.sections .section__content {
+  max-height: 0px;
+  overflow: hidden;
+  text-align: justify;
+  word-break: keep-all;
+  transition: all 0.5s ease;
+  background-color: #e9aaaad5;
+}
+.sections .section:hover {
+  background-color: #ccc;
+}
+
+/*# sourceMappingURL=render.css.map */

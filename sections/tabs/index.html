@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Icon bar</title>
+
+        <link
+            rel="icon"
+            href="https://image.flaticon.com/icons/png/512/2371/2371580.png"
+        />
+        <link
+            href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="./render.css" />
+    </head>
+
+    <body>
+        <!-- Tab links -->
+        <div class="tab">
+            <div
+                class="tablinks"
+                onclick="openCity(event, 'London')"
+                id="defaultOpen"
+            >
+                London
+            </div>
+            <div class="tablinks" onclick="openCity(event, 'Paris')">Paris</div>
+            <div class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</div>
+        </div>
+
+        <!-- Tab content -->
+        <div style="border: 1px solid; margin: 0 1rem; border-top: none">
+            <div id="London" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+                <span
+                    style="position: absolute; top: 1rem; right: 1rem"
+                    onclick="this.parentElement.style.display = 'none'"
+                    >&times</span
+                >
+            </div>
+
+            <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </div>
+
+        <div style="height: 100px"></div>
+        <!-- vertical tabs -->
+        <div class="vertical">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">
+                    London
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">
+                    Paris
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+                    Tokyo
+                </button>
+            </div>
+
+            <!-- <div "> -->
+            <div id="London" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+            <!-- </div> -->
+        </div>
+        <!-- my -->
+        <!-- <ul class="tabs">
+            <li class="location-item">
+                <p>London</p>
+                <div class="panel">London is the capital city of England</div>
+            </li>
+
+            <li class="location-item">
+                <p>Paris</p>
+                <div class="panel">Paris is the capital city of France</div>
+            </li>
+
+            <li class="location-item">
+                <p>Tokyo</p>
+                <div class="panel">Tokyo is the capital city of Japan</div>
+            </li>
+        </ul> -->
+        <script src="./script.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </body>
+</html>

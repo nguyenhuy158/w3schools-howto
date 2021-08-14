@@ -1,0 +1,46 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+	a
+		text-decoration: none
+
+$primaryColor: #04aa6d
+$secondColor: #fff
+$backgroundColor: #555555
+
+.icon-bar
+	margin: 1rem
+	width: 90px
+	height: auto
+	display: flex
+	flex-direction: column
+	&.horizontal
+		flex-direction: row
+		width: auto
+		height: 90px
+		.icon-item
+			width: 90px
+			height: inherit
+
+	.icon-item
+		color: $secondColor
+		background-color: $backgroundColor
+		width: inherit
+		height: 90px
+		display: block
+		transition: all .3s ease
+		// text-align: center
+		&:hover
+			background-color: #000
+
+		&.active
+			background-color: $primaryColor
+
+		> i
+			font-size: 2rem
+			position: relative
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)

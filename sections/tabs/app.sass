@@ -1,0 +1,91 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	user-select: none
+
+.tab
+	border: 1px solid #00000080
+	margin: 0 1rem
+	width: calc(100% - 2rem)
+	background-color: #f1f1f1
+	display: flex
+
+	> .tablinks
+		display: inline-block
+		cursor: pointer
+		margin: 0
+		border: none
+		background-color: transparent
+		padding: 1rem
+		font-size: 1rem
+		transition: all 0.3s ease
+		&:hover
+			background-color: #cccccc85
+		&.active
+			background-color: #ccc
+
+.tabcontent
+	position: relative
+	// border: 1px solid #00000080
+	// border-top: none
+	padding: 1rem
+	width: 100%
+	background-color: #ccc
+	// margin: 0 1rem
+	height: fit-content
+	transition: all 0.4s ease
+	display: none
+	animation: fade 1s
+
+@keyframes fade
+	0%
+		opacity: 0
+	100%
+		opacity: 1
+
+.tabs
+	position: relative
+	list-style-type: none
+	width: fit-content
+	height: fit-content
+
+	> .location-item
+		background-color: #313131
+		float: left
+		> p
+			padding: 10px
+			font-size: 1.5rem
+		> p:hover + .panel
+			z-index: 1
+		> .panel
+			position: absolute
+			// top: 100%
+			// margin: 1rem
+			padding: 1rem
+			left: 0
+			background-color: #fff
+			z-index: -1
+
+.vertical
+	display: flex
+	width: 100%
+	height: fit-content
+	background-color: #cccccc42
+	align-items: center
+	justify-content: center
+	.tab
+		width: 200px
+		height: fit-content
+		display: block
+
+		> .tablinks
+			text-align: left
+			display: block
+			width: 100%
+
+	> .tabcontent
+		height: 100px
+		display: block
+		height: auto
+		margin-right: 1rem
