@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tab hover</title>
+
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/2371/2371580.png" />
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./render.css" />
+</head>
+
+<body>
+    <div class="tab-header--content">
+        <div id="london" class="content">
+            <h2>London</h2>
+            <span>London is a capital city of England.</span>
+        </div>
+        <div id="paris" class="content">
+            <h2>Paris</h2>
+            <span>Paris is a capital city of France.</span>
+        </div>
+        <div id="tokyo" class="content">
+            <h2>Tokyo</h2>
+            <span>Tokyo is a capital city of Japan.</span>
+        </div>
+        <div id="oslo" class="content">
+            <h2>Oslo</h2>
+            <span>Oslo is a capital city of Norway.</span>
+        </div>
+    </div>
+    <div class="tab-header">
+        <div class="tab" name="london">London</div>
+        <div class="tab" name="paris">Paris</div>
+        <div class="tab" name="tokyo">Tokyo</div>
+        <div class="tab" name="oslo">Oslo</div>
+    </div>
+
+    <script>
+        let headers = document.querySelectorAll(".tab");
+        let contents = document.querySelectorAll(".content");
+        headers.forEach((header) => {
+            header.addEventListener("mouseover", (e) => {
+                console.log(e);
+                console.log(
+                    document.getElementById(e.target.getAttribute("name"))
+                );
+
+                headers.forEach(header => {
+                    header.classList.remove("active");
+                });
+                e.target.classList.add("active")
+
+                contents.forEach(content => {
+                    content.classList.remove("active");
+                })
+
+                document.getElementById(e.target.getAttribute("name")).classList.add("active")
+
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>

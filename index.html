@@ -21,27 +21,65 @@
             crossorigin="anonymous"
         />
 
-        <link rel="stylesheet" href="./styles/render.css" />
+        <link rel="stylesheet" href="./render.css" />
     </head>
     <body>
+        <iframe
+            src="#"
+            frameborder="0"
+            id="demo-page"
+            class="show-page"
+            name="iframe"
+        ></iframe>
+
         <ul class="section-list">
             <li class="section-item">
                 <a href="./sections/iconBar/index.html">Icon bar</a>
+                <div class="show">Demo page</div>
             </li>
             <li class="section-item">
                 <a href="./sections/navigationBar/index.html">Navigation</a>
+                <div class="show">Demo page</div>
             </li>
             <li class="section-item">
                 <a href="./sections/accordion/index.html">Accordion</a>
+                <div class="show">Demo page</div>
             </li>
             <li class="section-item">
                 <a href="./sections/tabs/index.html">Tabs</a>
+                <div class="show">Demo page</div>
             </li>
             <li class="section-item">
                 <a href="./sections/tabHeader/index.html">tab header</a>
+                <div class="show">Demo page</div>
+            </li>
+            <li class="section-item">
+                <a href="./sections/tabHover/index.html">tab hover</a>
+                <div class="show">Demo page</div>
+            </li>
+            <li class="section-item">
+                <a href="./sections/responsiveTabNav/index.html">responsive tab nav</a>
+                <div class="show">Demo page</div>
             </li>
         </ul>
-        <script src="./script/script.js"></script>
+
+        <script>
+            let iframe = document.querySelector("#demo-page");
+            let demos = document.querySelectorAll(".show");
+
+            demos.forEach((demo) => {
+                demo.addEventListener("click", (e) => {
+                    // console.log(e.target.parentElement);
+                    let url = e.target.parentElement
+                        .querySelector("a")
+                        .getAttribute("href");
+                    // console.log(url);
+
+                    iframe.setAttribute("src", url);
+                });
+            });
+        </script>
+        <!-- <script src="./script/script.js"></script> -->
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     </body>
 </html>
