@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tab {
+    border: 1px solid #00000080;
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
+    background-color: #f1f1f1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.tab > .tablinks {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    padding: 1rem;
+    font-size: 1rem;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.tab > .tablinks:hover {
+    background-color: #cccccc85;
+}
+
+.tab > .tablinks.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    position: relative;
+    padding: 1rem;
+    width: 100%;
+    background-color: #ccc;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    display: none;
+    -webkit-animation: fade 1s;
+    animation: fade 1s;
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.tabs {
+    position: relative;
+    list-style-type: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.tabs > .location-item {
+    background-color: #313131;
+    float: left;
+}
+
+.tabs > .location-item > p {
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.tabs > .location-item > p:hover + .panel {
+    z-index: 1;
+}
+
+.tabs > .location-item > .panel {
+    position: absolute;
+    padding: 1rem;
+    left: 0;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.vertical {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: #cccccc42;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.vertical .tab {
+    width: 200px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: block;
+}
+
+.vertical .tab > .tablinks {
+    text-align: left;
+    display: block;
+    width: 100%;
+}
+
+.vertical > .tabcontent {
+    height: 100px;
+    display: block;
+    height: auto;
+    margin-right: 1rem;
+}
+/*# sourceMappingURL=app.css.map */

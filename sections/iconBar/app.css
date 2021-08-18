@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* a {
+  text-decoration: none;
+}
+
+.icon-bar {
+  margin: 1rem;
+  width: 90px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.icon-bar.horizontal {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: auto;
+  height: 90px;
+}
+
+.icon-bar.horizontal .icon-item {
+  width: 90px;
+  height: inherit;
+}
+
+.icon-bar .icon-item {
+  color: #fff;
+  background-color: #555555;
+  width: inherit;
+  height: 90px;
+  display: block;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.icon-bar .icon-item:hover {
+  background-color: #000;
+}
+
+.icon-bar .icon-item.active {
+  background-color: #04aa6d;
+}
+
+.icon-bar .icon-item > i {
+  font-size: 2rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=app.css.map */
